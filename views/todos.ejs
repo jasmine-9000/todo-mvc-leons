@@ -15,9 +15,9 @@
     <div class="container">
 
         <h1 class="orange-text text-darken-1">Todos</h1>
-        <ul>
+        <ul class="collection">
             <% todos.forEach( el => { %>
-                <li class='todoItem' data-id='<%=el._id%>'>
+                <li class='todoItem collection-item' data-id='<%=el._id%>'>
                     <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
             <i class="material-icons del">delete</i>
         </li>
